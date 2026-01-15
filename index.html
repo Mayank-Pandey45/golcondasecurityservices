@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golconda Security Services | Enterprise Cybersecurity</title>
+    <link rel="icon" type="image/png" href="/images/golconda security services_.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1a1f35',
+                            cyan: '#14B8A6',
+                            cyanHover: '#0d9488',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    maxWidth: {
+                        '8xl': '88rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(8px); }
+        .glass-input { background: rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="antialiased text-slate-800">
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 h-20 transition-all duration-300 bg-[#1a1f35]/80 backdrop-blur-md border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+            
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="/images/golconda security services_.png" 
+                     alt="Golconda Security Services Logo" 
+                     class="h-10 md:h-12 w-auto rounded-full border border-white/10 shadow-lg group-hover:border-brand-cyan transition-colors">
+                
+                <span class="text-white font-bold text-xs md:text-xl tracking-wide group-hover:text-brand-cyan transition-colors">
+                    GOLCONDA SECURITY SERVICES
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-sm uppercase tracking-wider font-light text-white/80 hover:text-brand-cyan transition-colors">Services</a>
+                <a href="#expertise" class="text-sm uppercase tracking-wider font-light text-white/80 hover:text-brand-cyan transition-colors">Expertise</a>
+                <a href="#case-studies" class="text-sm uppercase tracking-wider font-light text-white/80 hover:text-brand-cyan transition-colors">Case Studies</a>
+                <a href="#contact" class="text-sm uppercase tracking-wider font-light text-white/80 hover:text-brand-cyan transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#portal" class="px-6 py-2.5 rounded-md border border-brand-cyan text-brand-cyan text-sm font-semibold hover:bg-brand-cyan/10 transition-colors">
+                    Client Portal
+                </a>
+                <a href="#contact" class="px-6 py-2.5 rounded-md bg-brand-cyan text-black text-sm font-semibold hover:bg-brand-cyanHover transition-colors shadow-[0_0_15px_rgba(20,184,166,0.3)]">
+                    Get Protected
+                </a>
+            </div>
+
+            <button class="md:hidden text-white text-2xl">
+                <i class="ri-menu-4-line"></i>
+            </button>
+        </div>
+        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-brand-cyan to-transparent opacity-50"></div>
+    </nav>
+
+    <header class="relative min-h-screen bg-[#1a1f35] flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920&h=1080&auto=format&fit=crop" 
+                 alt="Corporate Workspace" 
+                 class="w-full h-full object-cover object-top opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1f35]/95 via-[#1a1f35]/80 to-[#1a1f35]/60"></div>
+        </div>
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 py-32">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 animate-fade-in-up">
+                    <span class="w-2 h-2 bg-brand-cyan rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium tracking-wide text-white">Enterprise Cybersecurity Solutions</span>
+                </div>
+
+                <h1 class="text-6xl md:text-7xl font-bold leading-tight text-white mb-6">
+                    Protect Your Business<br />
+                    <span class="text-brand-cyan">With Confidence</span>
+                </h1>
+
+                <p class="text-lg leading-relaxed text-white/80 max-w-2xl mb-10">
+                    Comprehensive cybersecurity solutions designed to safeguard your digital assets. Our expert team provides 24/7 monitoring, threat detection, and rapid response to keep your business secure.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mb-16">
+                    <a href="#contact" class="group px-8 py-4 bg-brand-cyan text-black font-semibold rounded-lg flex items-center gap-3 hover:bg-brand-cyanHover transition-all">
+                        Get Started
+                        <i class="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-lg flex items-center gap-3 hover:bg-white/20 transition-all">
+                        <i class="ri-shield-check-line"></i>
+                        Our Services
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="px-6 py-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl">
+                        <div class="text-4xl font-bold text-brand-cyan mb-2">99.9%</div>
+                        <div class="text-white/70 text-sm font-medium">Uptime Guarantee</div>
+                    </div>
+                    <div class="px-6 py-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl">
+                        <div class="text-4xl font-bold text-brand-cyan mb-2 flex items-center">
+                            <span id="counter">500</span>k+
+                        </div>
+                        <div class="text-white/70 text-sm font-medium">Threats Blocked</div>
+                    </div>
+                    <div class="px-6 py-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl">
+                        <div class="text-4xl font-bold text-brand-cyan mb-2">24/7</div>
+                        <div class="text-white/70 text-sm font-medium">Security Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-[#1a1f35]">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Defending your infrastructure with military-grade precision and advanced technology.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-brand-cyan transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-brand-cyan/10 rounded-lg group-hover:bg-brand-cyan/20 transition-colors">
+                        <i class="ri-shield-check-line text-4xl text-brand-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#1a1f35]">Threat Detection & Response</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">24/7 monitoring and rapid response to neutralize threats before they impact your business operations.</p>
+                    <a href="#" class="inline-flex items-center gap-2 text-brand-cyan font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-brand-cyan transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-brand-cyan/10 rounded-lg group-hover:bg-brand-cyan/20 transition-colors">
+                        <i class="ri-bug-line text-4xl text-brand-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#1a1f35]">Penetration Testing</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Comprehensive security testing to identify vulnerabilities in your network, applications, and cloud systems.</p>
+                    <a href="#" class="inline-flex items-center gap-2 text-brand-cyan font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="p-8 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-brand-cyan transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-brand-cyan/10 rounded-lg group-hover:bg-brand-cyan/20 transition-colors">
+                        <i class="ri-file-list-3-line text-4xl text-brand-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#1a1f35]">Security Audits</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Complete infrastructure assessment to ensure your security posture meets industry best practices.</p>
+                    <a href="#" class="inline-flex items-center gap-2 text-brand-cyan font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="p-8 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-brand-cyan transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-brand-cyan/10 rounded-lg group-hover:bg-brand-cyan/20 transition-colors">
+                        <i class="ri-checkbox-circle-line text-4xl text-brand-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#1a1f35]">Compliance Management</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Navigating regulatory compliance standards including GDPR, HIPAA, SOC2, and ISO 27001.</p>
+                    <a href="#" class="inline-flex items-center gap-2 text-brand-cyan font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="bg-gray-50 py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#1a1f35]">World-Class Expertise</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Our team is composed of elite security researchers, ethical hackers, and compliance strategists. We don't just use tools; we understand the code behind them.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="px-4 py-3 bg-cyan-50 rounded-lg border border-cyan-100 text-center">
+                            <span class="text-sm font-semibold text-cyan-700">CISSP Certified</span>
+                        </div>
+                        <div class="px-4 py-3 bg-cyan-50 rounded-lg border border-cyan-100 text-center">
+                            <span class="text-sm font-semibold text-cyan-700">CEH Certified</span>
+                        </div>
+                        <div class="px-4 py-3 bg-cyan-50 rounded-lg border border-cyan-100 text-center">
+                            <span class="text-sm font-semibold text-cyan-700">OSCP Certified</span>
+                        </div>
+                        <div class="px-4 py-3 bg-cyan-50 rounded-lg border border-cyan-100 text-center">
+                            <span class="text-sm font-semibold text-cyan-700">CISM Certified</span>
+                        </div>
+                    </div>
+                    
+                    <button class="px-8 py-3 rounded-lg border-2 border-[#1a1f35] text-[#1a1f35] font-semibold hover:bg-[#1a1f35] hover:text-white transition-colors">
+                        View Team Profile
+                    </button>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Cybersecurity Operations Center" 
+                         class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 hidden md:block">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-green-100 p-3 rounded-full">
+                                <i class="ri-check-double-line text-green-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 uppercase tracking-wide">Status</div>
+                                <div class="font-bold text-[#1a1f35]">System Secure</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies" class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-[#1a1f35]">Success Stories</h2>
+                <p class="text-lg text-gray-600">Real results for enterprise clients facing complex threats.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow p-8">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800&h=400" 
+                         class="w-full h-48 object-cover rounded-lg mb-6" alt="FinTech Office">
+                    <div class="text-sm font-semibold text-brand-cyan mb-2">Global FinTech</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#1a1f35]">Ransomware Mitigation</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Successfully intercepted a sophisticated ransomware attack targeting payment gateways.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                            <i class="ri-check-line text-green-500 mt-1"></i> 0% Data Loss
+                        </li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                            <i class="ri-check-line text-green-500 mt-1"></i> 2 Hour Recovery Time
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow p-8">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800&h=400" 
+                         class="w-full h-48 object-cover rounded-lg mb-6" alt="Healthcare Team">
+                    <div class="text-sm font-semibold text-brand-cyan mb-2">Healthcare Network</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#1a1f35]">HIPAA Compliance Overhaul</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Complete security audit and restructuring for a multi-state hospital network.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                            <i class="ri-check-line text-green-500 mt-1"></i> 100% Audit Pass Rate
+                        </li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                            <i class="ri-check-line text-green-500 mt-1"></i> Secured Patient Data
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow p-8">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800&h=400" 
+                         class="w-full h-48 object-cover rounded-lg mb-6" alt="Tech SaaS">
+                    <div class="text-sm font-semibold text-brand-cyan mb-2">SaaS Enterprise</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#1a1f35]">Cloud Infrastructure Defense</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Implementing Zero Trust architecture for a distributed remote workforce.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                            <i class="ri-check-line text-green-500 mt-1"></i> Automated Threat Blocking
+                        </li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                            <i class="ri-check-line text-green-500 mt-1"></i> Seamless Employee Access
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portal" class="bg-[#1a1f35] py-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-cyan/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Secure Client Access</h2>
+                    <p class="text-lg text-white/80 leading-relaxed mb-8">
+                        Access your real-time security dashboard, download audit reports, and manage support tickets through our encrypted portal.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-white/90">
+                            <i class="ri-dashboard-3-line text-brand-cyan text-xl"></i>
+                            Live Threat Map
+                        </li>
+                        <li class="flex items-center gap-3 text-white/90">
+                            <i class="ri-file-shield-2-line text-brand-cyan text-xl"></i>
+                            Compliance Documents
+                        </li>
+                        <li class="flex items-center gap-3 text-white/90">
+                            <i class="ri-customer-service-2-line text-brand-cyan text-xl"></i>
+                            Direct Analyst Support
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-10 max-w-md mx-auto w-full shadow-2xl">
+                    <div class="flex items-center gap-2 mb-8">
+                        <i class="ri-lock-2-line text-brand-cyan text-2xl"></i>
+                        <span class="text-xl font-semibold text-white">Portal Login</span>
+                    </div>
+                    
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-white/90 mb-2">Business Email</label>
+                            <input type="email" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors" placeholder="name@company.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-white/90 mb-2">Password</label>
+                            <input type="password" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors" placeholder="••••••••">
+                        </div>
+                        <button class="w-full px-6 py-3 bg-brand-cyan text-black font-semibold rounded-lg hover:bg-brand-cyanHover transition-colors">
+                            Secure Login
+                        </button>
+                    </form>
+
+                    <div class="grid grid-cols-3 gap-4 mt-8">
+                        <div class="px-3 py-2 bg-white/5 border border-white/10 rounded-lg flex flex-col items-center justify-center">
+                            <i class="ri-shield-keyhole-line text-brand-cyan mb-1"></i>
+                            <span class="text-xs text-white/70">256-bit SSL</span>
+                        </div>
+                        <div class="px-3 py-2 bg-white/5 border border-white/10 rounded-lg flex flex-col items-center justify-center">
+                            <i class="ri-smartphone-line text-brand-cyan mb-1"></i>
+                            <span class="text-xs text-white/70">2FA Enabled</span>
+                        </div>
+                        <div class="px-3 py-2 bg-white/5 border border-white/10 rounded-lg flex flex-col items-center justify-center">
+                            <i class="ri-lock-line text-brand-cyan mb-1"></i>
+                            <span class="text-xs text-white/70">Encrypted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-10">
+                    <h2 class="text-3xl font-bold text-[#1a1f35] mb-6">Get a Security Assessment</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address <span class="text-red-500">*</span></label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company Name <span class="text-red-500">*</span></label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message <span class="text-red-500">*</span></label>
+                            <textarea rows="6" maxlength="500" required class="w-full px-4 py-3 border border-gray-300 rounded-lg resize-none focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition-all"></textarea>
+                            <div class="text-xs text-gray-500 text-right mt-1">Max 500 characters</div>
+                        </div>
+                        <button type="submit" class="w-full px-8 py-4 bg-brand-cyan text-black font-semibold rounded-lg hover:bg-brand-cyanHover transition-colors">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <div class="mb-10">
+                        <h2 class="text-4xl font-bold text-[#1a1f35] mb-4">Contact Us</h2>
+                        <p class="text-gray-600 text-lg">Ready to secure your enterprise? Reach out to our dedicated team of experts.</p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-cyan/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-phone-line text-2xl text-brand-cyan"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-[#1a1f35] mb-1">Phone</h3>
+                                <a href="tel:+919032545115" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">
+                                    +91-9032545115
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-cyan/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-mail-line text-2xl text-brand-cyan"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-[#1a1f35] mb-1">Email</h3>
+                                <a href="mailto:golcondasecservices@gmail.com" class="text-gray-600 hover:text-brand-cyan transition-colors font-medium">
+                                    golcondasecservices@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-cyan/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-map-pin-line text-2xl text-brand-cyan"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-[#1a1f35] mb-1">Headquarters</h3>
+                                <p class="text-gray-600">Balaji Nagar Near CSI Church Malkaram <br>Secunderabad,500087,INDIA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="bg-[#1a1f35] border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        <a href="#" class="flex items-center gap-3 group">
+            <img src="/images/golconda security services_.png" 
+                 alt="Golconda Security Services Logo" 
+                 class="h-12 w-auto rounded-full border border-white/10 shadow-lg group-hover:border-brand-cyan transition-colors">
+            
+            <span class="text-white font-bold text-xl tracking-wide group-hover:text-brand-cyan transition-colors">GOLCONDA SECURITY SERVICES</span>
+        </a>
+
+        <div class="flex flex-wrap justify-center gap-6 text-sm font-medium">
+            <a href="#" class="text-white/60 hover:text-brand-cyan transition-colors">Privacy Policy</a>
+            <a href="#" class="text-white/60 hover:text-brand-cyan transition-colors">Terms of Use</a>
+            <a href="#" class="text-white/60 hover:text-brand-cyan transition-colors">Guidelines</a>
+        </div>
+            
+        <div class="text-white/60 text-sm text-center">
+            &copy; 2025 Golconda Security Services. All rights reserved.
+        </div>
+
+        <div class="flex gap-4">
+            <a href="#" class="text-white/60 hover:text-brand-cyan transition-colors">
+                <i class="ri-linkedin-fill text-xl"></i>
+            </a>
+            <a href="#" class="text-white/60 hover:text-brand-cyan transition-colors">
+                <i class="ri-twitter-x-fill text-xl"></i>
+            </a>
+            <a href="#" class="text-white/60 hover:text-brand-cyan transition-colors">
+                <i class="ri-youtube-fill text-xl"></i>
+            </a>
+            <a href="#" class="text-white/60 hover:text-brand-cyan transition-colors">
+                <i class="ri-global-fill text-xl"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+    <script>
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.remove('bg-[#1a1f35]/80', 'backdrop-blur-md', 'border-transparent');
+                navbar.classList.add('bg-[#1a1f35]', 'shadow-lg', 'shadow-cyan-500/10', 'border-white/10');
+            } else {
+                navbar.classList.add('bg-[#1a1f35]/80', 'backdrop-blur-md', 'border-transparent');
+                navbar.classList.remove('bg-[#1a1f35]', 'shadow-lg', 'shadow-cyan-500/10', 'border-white/10');
+            }
+        });
+
+        // Simple Animated Counter for 500k+
+        const counterElement = document.getElementById('counter');
+        let hasAnimated = false;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasAnimated) {
+                    hasAnimated = true;
+                    animateValue(counterElement, 0, 500, 2000);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(counterElement);
+
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start).toLocaleString();
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+    </script>
+</body>
+</html>
