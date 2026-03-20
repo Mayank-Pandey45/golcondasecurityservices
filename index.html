@@ -1,99 +1,227 @@
-<header class="relative min-h-screen bg-[#1a1f35] flex items-center pt-20 overflow-hidden">
-    <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1557597774-9d2739f85a76?q=80&w=1920" 
-             alt="Security Operations" class="w-full h-full object-cover opacity-40">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#1a1f35] via-[#1a1f35]/90 to-transparent"></div>
-    </div>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golconda Security Services | Physical & Digital Protection</title>
+    <link rel="icon" type="image/png" href="golconda security services_.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1a1f35',
+                            cyan: '#14B8A6',
+                            cyanHover: '#0d9488',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 py-32">
-        <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-5 py-2 bg-brand-cyan/10 backdrop-blur-sm border border-brand-cyan/20 rounded-full mb-6">
-                <span class="text-sm font-bold tracking-widest text-brand-cyan uppercase">Integrated Security Excellence</span>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(8px); }
+        .gradient-text { background: linear-gradient(90deg, #14B8A6, #fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="antialiased text-slate-800 bg-white">
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 h-20 transition-all duration-300 bg-[#1a1f35]/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="golconda security services_.png" alt="Logo" class="h-10 md:h-12 w-auto rounded-full border border-white/10 group-hover:border-brand-cyan transition-colors">
+                <span class="text-white font-bold text-xs md:text-xl tracking-wide">GOLCONDA SECURITY</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-sm uppercase tracking-wider font-medium text-white/80 hover:text-brand-cyan transition-colors">Services</a>
+                <a href="#expertise" class="text-sm uppercase tracking-wider font-medium text-white/80 hover:text-brand-cyan transition-colors">Expertise</a>
+                <a href="#compliance" class="text-sm uppercase tracking-wider font-medium text-white/80 hover:text-brand-cyan transition-colors">Compliance</a>
+                <a href="#contact" class="text-sm uppercase tracking-wider font-medium text-white/80 hover:text-brand-cyan transition-colors">Contact</a>
             </div>
 
-            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white mb-6">
-                Physical Vigilance.<br />
-                <span class="text-brand-cyan">Digital Intelligence.</span>
-            </h1>
-
-            <p class="text-lg leading-relaxed text-white/70 max-w-2xl mb-10">
-                Golconda Security Services delivers 360° protection. From elite on-site security personnel to deep-dive cybersecurity audits, we safeguard your assets at every layer.
-            </p>
-            
-            </div>
-    </div>
-</header>
-
-<section id="physical-security" class="bg-slate-50 py-24 border-t border-gray-200">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div class="max-w-2xl">
-                <h2 class="text-4xl font-bold text-brand-dark mb-4">On-Site Protection</h2>
-                <p class="text-gray-600">Professional, disciplined, and highly trained security personnel for your corporate and industrial needs.</p>
-            </div>
-            <div class="bg-white px-6 py-3 rounded-lg border border-brand-cyan shadow-sm text-brand-cyan font-bold">
-                PASARA Licensed Agency
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="px-6 py-2.5 rounded-md bg-brand-cyan text-black text-sm font-bold hover:bg-brand-cyanHover transition-all shadow-lg shadow-cyan-500/20">
+                    Get Protected
+                </a>
             </div>
         </div>
+    </nav>
 
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-6 items-start">
-                <div class="w-14 h-14 bg-brand-dark text-white rounded-lg flex items-center justify-center shrink-0">
-                    <i class="ri-user-shield-line text-3xl"></i>
+    <header class="relative min-h-screen bg-[#1a1f35] flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1557597774-9d2739f85a76?q=80&w=1920" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1f35] via-[#1a1f35]/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 py-20">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-cyan/10 border border-brand-cyan/20 rounded-full mb-8">
+                    <span class="w-2 h-2 bg-brand-cyan rounded-full animate-pulse"></span>
+                    <span class="text-xs font-bold text-white tracking-widest uppercase">Elite Integrated Security</span>
                 </div>
+                <h1 class="text-5xl md:text-8xl font-extrabold text-white leading-tight mb-8">
+                    Physical Power.<br><span class="gradient-text">Digital Intel.</span>
+                </h1>
+                <p class="text-xl text-white/70 max-w-2xl mb-12 leading-relaxed">
+                    Protecting your corporate assets from every angle. From PASARA-licensed manpower to advanced VAPT cybersecurity audits.
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <a href="#contact" class="px-10 py-5 bg-brand-cyan text-black font-bold rounded-xl hover:scale-105 transition-all">Start Your Assessment</a>
+                    <a href="#services" class="px-10 py-5 bg-white/5 backdrop-blur-md border border-white/20 text-white font-bold rounded-xl hover:bg-white/10 transition-all text-center">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="compliance" class="py-12 bg-gray-50 border-b border-gray-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10">Accreditations & Tech Stack</p>
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-12 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="ri-medal-fill text-brand-cyan"></i> PASARA</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="ri-shield-user-fill text-brand-cyan"></i> ESI/PF</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="ri-terminal-box-fill text-brand-cyan"></i> NMAP</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="ri-code-box-fill text-brand-cyan"></i> BURP SUITE</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="ri-lock-fill text-brand-cyan"></i> AES-256</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="ri-government-fill text-brand-cyan"></i> GST REG.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 mb-20">
                 <div>
-                    <h3 class="text-xl font-bold mb-2">Corporate Security Guards</h3>
-                    <p class="text-gray-600 text-sm mb-4">Available in 8/12 hour shifts with strict code of conduct and emergency response training.</p>
-                    <ul class="text-sm space-y-2 text-gray-500">
-                        <li><i class="ri-checkbox-circle-fill text-brand-cyan mr-2"></i>Verified Background Checks</li>
-                        <li><i class="ri-checkbox-circle-fill text-brand-cyan mr-2"></i>Uniformed & Disciplined</li>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-1 w-12 bg-brand-cyan"></div>
+                        <h2 class="text-3xl font-bold text-brand-dark uppercase tracking-tight">On-Site Protection</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="p-8 rounded-3xl bg-slate-50 hover:shadow-xl transition-all border border-gray-100 group">
+                            <i class="ri-user-shield-line text-5xl text-brand-cyan mb-4 block"></i>
+                            <h3 class="text-xl font-bold mb-3">Corporate Guarding</h3>
+                            <p class="text-gray-600">8/12 Hour shifts with background-verified, uniformed personnel trained for high-stakes environments.</p>
+                        </div>
+                        <div class="p-8 rounded-3xl bg-slate-50 hover:shadow-xl transition-all border border-gray-100">
+                            <i class="ri-shield-cross-line text-5xl text-brand-cyan mb-4 block"></i>
+                            <h3 class="text-xl font-bold mb-3">Security Officers (ASO)</h3>
+                            <p class="text-gray-600">Site supervisors to ensure compliance, operational discipline, and 24/7 incident reporting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-1 w-12 bg-brand-cyan"></div>
+                        <h2 class="text-3xl font-bold text-brand-dark uppercase tracking-tight">Cyber Intelligence</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="p-8 rounded-3xl bg-[#1a1f35] text-white hover:shadow-2xl hover:shadow-cyan-500/10 transition-all border border-white/5">
+                            <i class="ri-bug-line text-5xl text-brand-cyan mb-4 block"></i>
+                            <h3 class="text-xl font-bold mb-3">VAPT Audits</h3>
+                            <p class="text-white/60">Comprehensive penetration testing for Web, Mobile, and Network assets to find flaws before hackers do.</p>
+                        </div>
+                        <div class="p-8 rounded-3xl bg-[#1a1f35] text-white hover:shadow-2xl hover:shadow-cyan-500/10 transition-all border border-white/5">
+                            <i class="ri-radar-line text-5xl text-brand-cyan mb-4 block"></i>
+                            <h3 class="text-xl font-bold mb-3">Threat Detection</h3>
+                            <p class="text-white/60">Continuous monitoring and rapid response infrastructure for enterprise-level data protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-white pt-24 pb-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="space-y-6">
+                    <a href="#" class="flex items-center gap-3">
+                        <img src="golconda security services_.png" class="h-14 rounded-full border border-white/10" alt="Logo">
+                        <span class="font-bold text-xl tracking-tighter">GOLCONDA</span>
+                    </a>
+                    <p class="text-white/50 text-sm leading-relaxed">
+                        Leading provider of hybrid security solutions in Hyderabad. We integrate traditional guarding with modern cybersecurity expertise.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-cyan hover:text-black transition-all"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-cyan hover:text-black transition-all"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-cyan hover:text-black transition-all"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-8 text-brand-cyan uppercase tracking-widest text-sm">Services</h4>
+                    <ul class="space-y-4 text-white/60 text-sm font-medium">
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">Physical Guarding</a></li>
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">VAPT Audits</a></li>
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">Security Consulting</a></li>
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">Network Security</a></li>
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">Facility Management</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex gap-6 items-start">
-                <div class="w-14 h-14 bg-brand-dark text-white rounded-lg flex items-center justify-center shrink-0">
-                    <i class="ri-government-line text-3xl"></i>
-                </div>
+
                 <div>
-                    <h3 class="text-xl font-bold mb-2">Security Officers (ASO)</h3>
-                    <p class="text-gray-600 text-sm mb-4">Expert supervision to maintain operational standards and coordinate with local authorities.</p>
-                    <ul class="text-sm space-y-2 text-gray-500">
-                        <li><i class="ri-checkbox-circle-fill text-brand-cyan mr-2"></i>Operational Reporting</li>
-                        <li><i class="ri-checkbox-circle-fill text-brand-cyan mr-2"></i>Incident Management</li>
+                    <h4 class="font-bold text-lg mb-8 text-brand-cyan uppercase tracking-widest text-sm">Company</h4>
+                    <ul class="space-y-4 text-white/60 text-sm font-medium">
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">About Golconda</a></li>
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">Careers <span class="ml-2 px-2 py-0.5 bg-brand-cyan/20 text-brand-cyan text-[10px] rounded-full">Hiring</span></a></li>
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">Compliance Portfolio</a></li>
+                        <li><a href="#" class="hover:text-brand-cyan transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="bg-white py-16 border-y border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 opacity-60 grayscale hover:grayscale-0 transition-all">
-            <div class="flex flex-col items-center gap-2">
-                <i class="ri-medal-line text-4xl"></i>
-                <span class="text-[10px] font-bold uppercase tracking-widest">PASARA</span>
+                <div>
+                    <h4 class="font-bold text-lg mb-8 text-brand-cyan uppercase tracking-widest text-sm">Get in Touch</h4>
+                    <div class="space-y-4 text-sm">
+                        <p class="flex items-start gap-3 text-white/60 leading-relaxed">
+                            <i class="ri-map-pin-2-line text-brand-cyan mt-1 text-lg"></i>
+                            Balaji Nagar, Near CSI Church, Malkaram, Secunderabad, 500087
+                        </p>
+                        <p class="flex items-center gap-3 text-white/60 font-bold">
+                            <i class="ri-phone-line text-brand-cyan text-lg"></i>
+                            +91-9032545115
+                        </p>
+                        <p class="flex items-center gap-3 text-white/60">
+                            <i class="ri-mail-line text-brand-cyan text-lg"></i>
+                            golcondasecservices@gmail.com
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-col items-center gap-2">
-                <i class="ri-hand-coin-line text-4xl"></i>
-                <span class="text-[10px] font-bold uppercase tracking-widest">ESI / PF</span>
-            </div>
-            <div class="flex flex-col items-center gap-2">
-                <i class="ri-terminal-box-line text-4xl"></i>
-                <span class="text-[10px] font-bold uppercase tracking-widest">Nmap / Burp</span>
-            </div>
-            <div class="flex flex-col items-center gap-2">
-                <i class="ri-command-line text-4xl"></i>
-                <span class="text-[10px] font-bold uppercase tracking-widest">Metasploit</span>
-            </div>
-            <div class="flex flex-col items-center gap-2">
-                <i class="ri-cloud-line text-4xl"></i>
-                <span class="text-[10px] font-bold uppercase tracking-widest">Kali Linux</span>
-            </div>
-            <div class="flex flex-col items-center gap-2">
-                <i class="ri-lock-password-line text-4xl"></i>
-                <span class="text-[10px] font-bold uppercase tracking-widest">AES-256</span>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/40 text-xs uppercase tracking-widest font-bold">&copy; 2026 Golconda Security & Facility Services</p>
+                <div class="text-white/40 text-xs">MOTO: Safety and security at any cost</div>
             </div>
         </div>
-    </div>
-</section>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-[#1a1f35]', 'py-2', 'shadow-2xl');
+                nav.classList.remove('bg-[#1a1f35]/80', 'py-0');
+            } else {
+                nav.classList.remove('bg-[#1a1f35]', 'py-2', 'shadow-2xl');
+                nav.classList.add('bg-[#1a1f35]/80', 'py-0');
+            }
+        });
+    </script>
+</body>
+</html>
