@@ -6,25 +6,18 @@
     <title>GOLCONDA SECURITY SERVICES | Enterprise Protection</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0b021a; color: #ffffff; scroll-behavior: smooth; }
         .nav-bg { background-color: #0b021a; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .hero-gradient { background: radial-gradient(circle at top right, #1a0b2e 0%, #0b021a 100%); }
-        
-        /* Mega Menu Logic */
-        .mega-menu {
-            opacity: 0; visibility: hidden; transform: translateY(10px);
-            transition: all 0.3s ease;
-        }
-        .group:hover .mega-menu {
-            opacity: 1; visibility: visible; transform: translateY(0);
-        }
-        
+        .mega-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
         .footer-link { color: #94a3b8; font-size: 14px; transition: color 0.3s; }
         .footer-link:hover { color: #22d3ee; }
-
         @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
         .animate-slide { animation: slide 35s linear infinite; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); }
     </style>
 </head>
 <body>
@@ -35,47 +28,39 @@
                 <div class="w-10 h-10 bg-cyan-500 rounded flex items-center justify-center font-black text-black shadow-lg shadow-cyan-500/20">G</div>
                 <span class="font-extrabold text-xl tracking-tighter uppercase">Golconda <span class="text-cyan-400">Security Services</span></span>
             </div>
-
             <div class="hidden lg:flex gap-10 items-center text-[13px] font-bold uppercase tracking-wider">
-                <a href="#" class="hover:text-cyan-400">Why Choose Us</a>
-                
+                <a href="#about" class="hover:text-cyan-400">Why Choose Us</a>
                 <div class="group relative py-2">
                     <button class="flex items-center gap-1 group-hover:text-cyan-400">Services <i class="ri-arrow-down-s-line"></i></button>
                     <div class="mega-menu absolute top-full -left-48 w-[800px] bg-[#130628] border border-white/10 rounded-xl p-8 grid grid-cols-2 gap-8 shadow-2xl">
                         <div class="space-y-6">
                             <h4 class="text-cyan-400 text-[10px] tracking-[0.3em]">Physical Security</h4>
-                            <a href="#" class="flex gap-4 group/item">
-                                <i class="ri-shield-user-fill text-2xl text-slate-500 group-hover/item:text-cyan-400"></i>
-                                <div>
-                                    <p class="text-white font-bold">Security Guard</p>
-                                    <p class="text-[11px] text-slate-400 mt-1">PASARA licensed elite manpower for your assets.</p>
-                                </div>
-                            </a>
-                            <a href="#" class="flex gap-4 group/item">
-                                <i class="ri-police-car-fill text-2xl text-slate-500 group-hover/item:text-cyan-400"></i>
-                                <div>
-                                    <p class="text-white font-bold">ASO (Supervisor)</p>
-                                    <p class="text-[11px] text-slate-400 mt-1">Tactical site management and expert supervision.</p>
-                                </div>
-                            </a>
+                            <div class="space-y-4">
+                                <a href="#" class="flex gap-4 group/item">
+                                    <i class="ri-shield-user-fill text-2xl text-slate-500 group-hover/item:text-cyan-400"></i>
+                                    <div><p class="text-white font-bold text-sm">Security Guard</p><p class="text-[10px] text-slate-400">Elite protection as per PASARA standards[cite: 9].</p></div>
+                                </a>
+                                <a href="#" class="flex gap-4 group/item">
+                                    <i class="ri-police-car-fill text-2xl text-slate-500 group-hover/item:text-cyan-400"></i>
+                                    <div><p class="text-white font-bold text-sm">ASO (Supervisor)</p><p class="text-[10px] text-slate-400">Tactical site management and operational standards.</p></div>
+                                </a>
+                            </div>
                         </div>
                         <div class="space-y-6">
                             <h4 class="text-cyan-400 text-[10px] tracking-[0.3em]">Cybersecurity Audit</h4>
-                            <div class="grid grid-cols-1 gap-4">
-                                <a href="#" class="text-slate-300 hover:text-white font-semibold text-xs flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Web Pentesting</a>
-                                <a href="#" class="text-slate-300 hover:text-white font-semibold text-xs flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Mobile App Security</a>
-                                <a href="#" class="text-slate-300 hover:text-white font-semibold text-xs flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Network Pentest</a>
-                                <a href="#" class="text-slate-300 hover:text-white font-semibold text-xs flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Red Teaming</a>
+                            <div class="grid grid-cols-1 gap-4 text-xs font-semibold text-slate-300">
+                                <a href="#" class="hover:text-white flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Web Pentesting </a>
+                                <a href="#" class="hover:text-white flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Mobile App Security </a>
+                                <a href="#" class="hover:text-white flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Network Pentest </a>
+                                <a href="#" class="hover:text-white flex items-center gap-2"><i class="ri-checkbox-circle-line text-cyan-400"></i> Red Teaming </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <a href="#" class="hover:text-cyan-400">Platform</a>
-                <a href="#" class="hover:text-cyan-400">About Us</a>
+                <a href="#pricing" class="hover:text-cyan-400">Pricing</a>
+                <a href="#compliance" class="hover:text-cyan-400">Compliance</a>
                 <a href="career.html" class="text-cyan-400 border-b-2 border-cyan-400/30">Career</a>
             </div>
-
             <button class="bg-white text-black text-[11px] font-black px-6 py-2.5 rounded hover:bg-cyan-400 transition-all uppercase">Request Audit</button>
         </div>
     </nav>
@@ -88,22 +73,17 @@
                     <span class="text-2xl font-black tracking-tighter uppercase italic">Golconda <span class="text-cyan-400">Security Services</span></span>
                 </div>
                 <p class="text-cyan-400 font-bold tracking-[0.4em] text-[10px] mb-6 uppercase">Time and Again, Securing You</p>
-                <h1 class="text-6xl md:text-8xl font-extrabold mb-10 leading-[0.9] tracking-tighter">
-                    TRUSTED BY <br><span class="text-white/80">ENTERPRISES.</span>
-                </h1>
-                <p class="text-slate-400 text-lg mb-12 max-w-lg leading-relaxed font-medium">
-                    Golconda Security Services is a leading provider of comprehensive penetration testing and elite guarding services to secure your digital and physical assets. [cite: 14]
-                </p>
+                <h1 class="text-6xl md:text-8xl font-extrabold mb-10 leading-[0.9] tracking-tighter italic">TRUSTED BY <br><span class="text-white/80">ENTERPRISES.</span></h1>
+                <p class="text-slate-400 text-lg mb-12 max-w-lg leading-relaxed font-medium">Integrated protection specialists since 2013[cite: 1]. We secure your digital assets through deep-dive audits and physical infrastructure with elite guards[cite: 14].</p>
                 <div class="flex gap-5">
-                    <button class="bg-cyan-500 hover:bg-cyan-400 text-black font-black py-4 px-10 rounded shadow-xl shadow-cyan-500/10 uppercase tracking-widest text-xs">Start Assignment</button>
-                    <button class="border border-white/20 hover:bg-white/5 py-4 px-10 rounded font-bold uppercase tracking-widest text-xs">View Catalog</button>
+                    <button class="bg-cyan-500 hover:bg-cyan-400 text-black font-black py-4 px-10 rounded shadow-xl uppercase tracking-widest text-xs">Start Assignment</button>
+                    <a href="#pricing" class="border border-white/20 hover:bg-white/5 py-4 px-10 rounded font-bold uppercase tracking-widest text-xs inline-block text-center">View Pricing</a>
                 </div>
             </div>
-            
             <div class="relative hidden lg:block">
                 <div class="absolute -inset-20 bg-cyan-500/10 rounded-full blur-[120px]"></div>
-                <div class="relative bg-white/5 border border-white/10 p-4 rounded-3xl backdrop-blur-sm">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80" class="rounded-2xl opacity-70 grayscale hover:grayscale-0 transition-all duration-1000" alt="Security Dashboard">
+                <div class="relative glass-card p-4 rounded-3xl">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80" class="rounded-2xl opacity-70 grayscale hover:grayscale-0 transition-all duration-1000" alt="Cyber Shield">
                 </div>
             </div>
         </div>
@@ -111,45 +91,126 @@
 
     <section class="py-20 bg-white/5 border-y border-white/5 overflow-hidden">
         <div class="flex animate-slide whitespace-nowrap gap-16">
-            <div class="flex items-center gap-10 opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
-                <img src="https://img.icons8.com/color/48/bank-building.png" class="h-12">
-                <span class="text-2xl font-black">FINANCIAL CENTER HYD</span>
+            <div class="flex items-center gap-10 opacity-30 grayscale hover:opacity-100 transition-all"><img src="https://img.icons8.com/color/48/bank-building.png" class="h-12"><span class="text-2xl font-black">FINANCIAL CENTER HYD</span></div>
+            <div class="flex items-center gap-10 opacity-30 grayscale"><img src="https://img.icons8.com/color/48/factory.png" class="h-12"><span class="text-2xl font-black">LOGISTICS HUB</span></div>
+            <div class="flex items-center gap-10 opacity-30 grayscale"><img src="https://img.icons8.com/color/48/company.png" class="h-12"><span class="text-2xl font-black">TECH PARK B-4</span></div>
+            <div class="flex items-center gap-10 opacity-30 grayscale"><img src="https://img.icons8.com/color/48/bank-building.png" class="h-12"><span class="text-2xl font-black">FINANCIAL CENTER HYD</span></div>
+        </div>
+    </section>
+
+    <section class="py-32 px-8 max-w-7xl mx-auto">
+        <div class="mb-20">
+            <h2 class="text-4xl font-black mb-4 italic tracking-tighter">Our Core Expertise</h2>
+            <div class="h-1 w-20 bg-cyan-400"></div>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-2xl group hover:border-cyan-500/50 transition-all">
+                <i class="ri-terminal-window-line text-4xl text-cyan-400 mb-6 block"></i>
+                <h3 class="text-xl font-bold mb-4">Vulnerability Assessment</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Deep scanning of targets including Web, Mobile, and Network layers to identify security gaps.</p>
+                <ul class="text-[11px] text-cyan-400 font-bold space-y-2 uppercase tracking-widest">
+                    <li>- 15+ Pages Analysis</li>
+                    <li>- API Integration Testing</li>
+                    <li>- Internal Network Hardening</li>
+                </ul>
             </div>
-            <div class="flex items-center gap-10 opacity-30 grayscale">
-                <img src="https://img.icons8.com/color/48/factory.png" class="h-12">
-                <span class="text-2xl font-black">LOGISTICS HUB</span>
+            <div class="glass-card p-10 rounded-2xl group hover:border-cyan-500/50 transition-all">
+                <i class="ri-user-follow-line text-4xl text-cyan-400 mb-6 block"></i>
+                <h3 class="text-xl font-bold mb-4">Manpower Deployment</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Elite guarding solutions with 12-hour shifts and ASO supervision for operational excellence[cite: 16, 26].</p>
+                <ul class="text-[11px] text-cyan-400 font-bold space-y-2 uppercase tracking-widest">
+                    <li>- PASARA Certified</li>
+                    <li>- 10+ Minimum Deployment</li>
+                    <li>- Strict Code of Conduct</li>
+                </ul>
             </div>
-            <div class="flex items-center gap-10 opacity-30 grayscale">
-                <img src="https://img.icons8.com/color/48/company.png" class="h-12">
-                <span class="text-2xl font-black">TECH PARK B-4</span>
-            </div>
-            <div class="flex items-center gap-10 opacity-30 grayscale">
-                <img src="https://img.icons8.com/color/48/bank-building.png" class="h-12">
-                <span class="text-2xl font-black">FINANCIAL CENTER HYD</span>
+            <div class="glass-card p-10 rounded-2xl group hover:border-cyan-500/50 transition-all">
+                <i class="ri-lock-password-line text-4xl text-cyan-400 mb-6 block"></i>
+                <h3 class="text-xl font-bold mb-4">Compliance Audit</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Source code reviews and Red Teaming simulations to ensure peak security preparedness.</p>
+                <ul class="text-[11px] text-cyan-400 font-bold space-y-2 uppercase tracking-widest">
+                    <li>- Manual Code Audit</li>
+                    <li>- Real-world Simulation</li>
+                    <li>- IoT Ecosystem Scan</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <footer class="footer-bg pt-32 pb-12 px-8">
+    <section id="pricing" class="py-32 bg-white/5 px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-black mb-16 text-center italic tracking-widest uppercase">Investment Roadmap</h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="glass-card p-8 rounded-2xl">
+                    <h4 class="text-cyan-400 font-bold mb-8 uppercase text-xs tracking-[0.3em]">Manpower Services </h4>
+                    <table class="w-full text-sm text-left border-collapse">
+                        <thead><tr class="text-slate-500 border-b border-white/10">
+                            <th class="py-4">Designation</th><th class="py-4">8 Hrs Shift</th><th class="py-4">12 Hrs Shift</th>
+                        </tr></thead>
+                        <tbody class="text-slate-300">
+                            <tr class="border-b border-white/5"><td class="py-4 font-bold">Security Guard</td><td class="py-4">₹23,500+</td><td class="py-4">₹27,500+</td></tr>
+                            <tr class="border-b border-white/5"><td class="py-4 font-bold">ASO Supervisor</td><td class="py-4">₹27,000+</td><td class="py-4">₹30,000+</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <h4 class="text-cyan-400 font-bold mb-8 uppercase text-xs tracking-[0.3em]">Digital Defense </h4>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-white/5 pb-3">
+                            <span class="text-sm font-bold">Web Pentest (Standard)</span><span class="text-cyan-400 font-black">₹35K - 50K</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-white/5 pb-3">
+                            <span class="text-sm font-bold">Mobile Security (Android/iOS)</span><span class="text-cyan-400 font-black">₹25K - 35K</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-white/5 pb-3">
+                            <span class="text-sm font-bold">Red Teaming Simulation</span><span class="text-cyan-400 font-black">₹1.5 Lakh+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="compliance" class="py-32 px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-20">
+            <div>
+                <h4 class="text-cyan-400 font-bold mb-6 text-xs tracking-widest uppercase">Mandatory Terms [cite: 17]</h4>
+                <ul class="space-y-4 text-xs text-slate-400 leading-relaxed">
+                    <li class="flex gap-3"><i class="ri-check-line text-cyan-400"></i> GST Extra @18% applicable on all billings[cite: 18].</li>
+                    <li class="flex gap-3"><i class="ri-check-line text-cyan-400"></i> Payments must be cleared by 5th of every month[cite: 19].</li>
+                    <li class="flex gap-3"><i class="ri-check-line text-cyan-400"></i> Minimum of 10 personnel required for deployment[cite: 24].</li>
+                    <li class="flex gap-3"><i class="ri-check-line text-cyan-400"></i> Deployment subject to a signed 11-month tenure agreement[cite: 21, 22].</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-cyan-400 font-bold mb-6 text-xs tracking-widest uppercase">Client Deliverables [cite: 27]</h4>
+                <ul class="space-y-4 text-xs text-slate-400 leading-relaxed">
+                    <li class="flex gap-3"><i class="ri-shield-check-line text-cyan-400"></i> Signed Authorization (LOA) for digital asset testing[cite: 28].</li>
+                    <li class="flex gap-3"><i class="ri-shield-check-line text-cyan-400"></i> MOU/NDA execution to protect sensitive data[cite: 29].</li>
+                    <li class="flex gap-3"><i class="ri-shield-check-line text-cyan-400"></i> White-listing of our IP addresses in Firewall/WAF[cite: 33].</li>
+                    <li class="flex gap-3"><i class="ri-shield-check-line text-cyan-400"></i> Full data backup responsibility of the client[cite: 34].</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#080114] pt-32 pb-12 px-8 border-t border-white/5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 mb-24">
             <div>
                 <div class="flex items-center gap-3 mb-8">
                     <div class="w-8 h-8 bg-cyan-400 rounded flex items-center justify-center font-bold text-black text-sm">G</div>
-                    <span class="font-extrabold text-lg uppercase tracking-tight">Golconda <span class="text-cyan-400">Security</span></span>
+                    <span class="font-extrabold text-lg uppercase">Golconda <span class="text-cyan-400">Security</span></span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed mb-8">
-                    Integrated security guard services and cybersecurity audit [cite: 13] for esteemed organizations[cite: 14]. Moto: Safety and security at any cost[cite: 10].
-                </p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">Integrated protection specialists since 2013[cite: 1]. Reg No. 493-2013[cite: 2]. Moto: Safety and security at any cost[cite: 10].</p>
                 <div class="flex gap-4">
                     <i class="ri-facebook-fill text-xl text-slate-500 hover:text-white cursor-pointer"></i>
                     <i class="ri-twitter-x-fill text-xl text-slate-500 hover:text-white cursor-pointer"></i>
                     <i class="ri-linkedin-fill text-xl text-slate-500 hover:text-white cursor-pointer"></i>
                 </div>
             </div>
-
             <div>
                 <h4 class="text-white font-bold mb-10 text-lg">Quick Links</h4>
-                <ul class="space-y-4">
+                <ul class="space-y-4 font-medium">
                     <li><a href="#" class="footer-link">About Us</a></li>
                     <li><a href="#" class="footer-link">Why Choose us</a></li>
                     <li><a href="#" class="footer-link">Advisories</a></li>
@@ -157,45 +218,32 @@
                     <li><a href="career.html" class="footer-link font-bold text-cyan-400">Career</a></li>
                 </ul>
             </div>
-
             <div>
                 <h4 class="text-white font-bold mb-10 text-lg">Services</h4>
-                <ul class="space-y-4">
-                    <li><a href="#" class="footer-link">Web Pentest </a></li>
-                    <li><a href="#" class="footer-link">Mobile Pentest </a></li>
-                    <li><a href="#" class="footer-link">Network Pentest </a></li>
-                    <li><a href="#" class="footer-link">Red Team Assessment </a></li>
-                    <li><a href="#" class="footer-link">Source Code Audit </a></li>
-                    <li><a href="#" class="footer-link">IoT Pentest </a></li>
-                    <li><a href="#" class="footer-link">ASO Supervisor </a></li>
+                <ul class="space-y-4 font-medium">
+                    <li><a href="#" class="footer-link">Web Pentest</a></li>
+                    <li><a href="#" class="footer-link">Mobile Pentest</a></li>
+                    <li><a href="#" class="footer-link">Network Pentest</a></li>
+                    <li><a href="#" class="footer-link">Red Teaming</a></li>
+                    <li><a href="#" class="footer-link">Source Code Audit</a></li>
+                    <li><a href="#" class="footer-link">IoT Pentest</a></li>
                 </ul>
             </div>
-
             <div>
-                <h4 class="text-white font-bold mb-10 text-lg">Contact Us</h4>
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <i class="ri-mail-line text-cyan-400"></i>
-                        <span class="text-slate-400 text-sm">golcondasecservices@gmail.com [cite: 35]</span>
-                    </div>
-                    <div class="flex gap-4">
-                        <i class="ri-phone-line text-cyan-400"></i>
-                        <span class="text-slate-400 text-sm">+91 9032545115 [cite: 8]</span>
-                    </div>
-                    <div class="flex gap-4">
-                        <i class="ri-map-pin-line text-cyan-400"></i>
-                        <span class="text-slate-400 text-sm">Plot No.202, Shanti Nagar, <br>Secunderabad-500087 [cite: 5, 7]</span>
-                    </div>
+                <h4 class="text-white font-bold mb-10 text-lg">Contact Command</h4>
+                <div class="space-y-6 text-slate-400 text-sm">
+                    <div class="flex gap-4"><i class="ri-mail-line text-cyan-400"></i><span>golcondasecservices@gmail.com [cite: 35]</span></div>
+                    <div class="flex gap-4"><i class="ri-phone-line text-cyan-400"></i><span>+91 9032545115 [cite: 8]</span></div>
+                    <div class="flex gap-4"><i class="ri-map-pin-line text-cyan-400"></i><span>Plot No.202, Shanti Nagar, <br>Secunderabad-500087 [cite: 5, 7]</span></div>
                 </div>
             </div>
         </div>
-
-        <div class="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:row justify-between items-center text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+        <div class="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:row justify-between items-center text-[10px] text-slate-600 font-bold uppercase tracking-widest">
             <p>Copyright © 2026 Golconda Security Services. All rights reserved.</p>
             <div class="flex gap-8 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition-colors">Terms of use</a>
-                <a href="#" class="hover:text-white transition-colors">Usage Agreement</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of use</a>
+                <a href="#" class="hover:text-white">Usage Agreement</a>
             </div>
         </div>
     </footer>
